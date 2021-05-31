@@ -130,7 +130,7 @@ images.forEach((object, index) => {
 function displayImages(event, object, index) {
     console.log(event);
     object.continue=true
-    event.path[1].children[0].src = `./images/${index}_${object.currentFrame}.jpg`
+    event.path[1].children[0].src = `images/${index}_${object.currentFrame}.jpg`
 
     setTimeout(() => {
         if (object.currentFrame < object.images) {
@@ -153,7 +153,7 @@ function displayImages(event, object, index) {
 function displayShadow(event, object, index) {
     object.continue = false
     object.currentFrame = 1
-    event.path[1].children[0].src = `./images/${index}.jpg`
+    event.path[1].children[0].src = `images/${index}.jpg`
 }
 
 
