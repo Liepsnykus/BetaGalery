@@ -128,7 +128,6 @@ images.forEach((object, index) => {
 
 
 function displayImages(event, object, index) {
-    console.log(event);
     object.continue=true
     event.path[1].children[0].src = `images/${index}_${object.currentFrame}.jpg`
 
