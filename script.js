@@ -64,7 +64,7 @@ let images = [
     {
         images: 3,
         currentFrame: 1,
-        name: 'Nepažystu',
+        name: 'Evelina',
         continue: false,
     },
     {
