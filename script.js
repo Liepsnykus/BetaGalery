@@ -10,12 +10,11 @@ names.forEach((name, index) => {
     imageContainer.classList.add('col-sm-6')
     imageContainer.classList.add('col-md-4')
     imageContainer.classList.add('col-lg-3')
-    imageContainer.classList.add('position-relative')
+    // imageContainer.classList.add('position-relative')
     imageContainer.innerHTML = `<div class="wrapper">
         <img class="image" src="./images/bg/${index}.jpg" id="${index}" alt="">
         <img class="image-hover" src="./images/${index}.gif" id="${index}" alt="">
         <div class="nameWrap"><div class="name">${name}</div></div>
-        <div class="over"></div>
         </div>`
     mainContainer.appendChild(imageContainer)
     imageContainer.addEventListener('click', displayImages)
@@ -23,9 +22,7 @@ names.forEach((name, index) => {
 
 
 function displayImages(event) {
-    console.log(event);
     event.target.classList.add('opacity')
-
 }
 
 
